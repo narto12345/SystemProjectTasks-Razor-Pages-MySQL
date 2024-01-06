@@ -1,0 +1,109 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn-link.nav-link:focus,
+.form-control:focus,
+.form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.tabla {
+  margin-left: auto;
+  margin-right: auto;
+  table-layout: fixed;
+  width: 1000px;
+}
+
+.oculto {
+  display: none;
+}
+
+.proyectos-head th {
+  background-color: #9bbbffc1;
+  text-align: center;
+}
+
+.proyectos-body td,
+th {
+  border: 1px solid #000000;
+  padding: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.estados,
+.acciones {
+  text-align: center;
+}
+
+.acciones button {
+  text-decoration: none;
+  background-color: #9bbbffc1;
+  color: #000;
+  border: 1px solid #000;
+  margin: 5px;
+}
+
+.boton {
+  text-decoration: none;
+  background-color: #9bbbffc1;
+  color: #000;
+  border: 1px solid #000;
+}
+
+.boton:hover {
+  background-color: #9bbbff7e;
+}
+
+.acciones button:hover {
+  background-color: #9bbbff7e;
+}
+
+#formulario-creacion table {
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #000;
+}
+
+#formulario-creacion label,
+input,
+select,
+button {
+  margin: 10px;
+}
+
+.lista-desplegable {
+  background-color: #9bbbffc1;
+}
+
+.lista-desplegable:hover {
+  background-color: #9bbbff7e;
+}
+
+.enlaces-action {
+  text-decoration: none;
+}
+
+.centrar {
+  text-align: center;
+}
