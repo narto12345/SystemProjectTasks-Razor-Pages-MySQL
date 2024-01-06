@@ -1,0 +1,125 @@
+﻿@page
+@model SystemProjectTasks.Pages.ProjectDetailModel
+@{
+}
+
+<h1>@Model.ProjectDetail.NameP</h1>
+<p>@Model.ProjectDetail.DescriptionP</p>
+
+<div style="display: flex;">
+    <div>
+        <h4>N° de Participantes: <a asp-area="" asp-page="/addUserProject/AddUserProject" asp-route-id="@Model.IdProject"><button title="Añadir participante">+</button></a></h4>
+        <ul>
+            @if (Model.ProjectDetail.ProjectUsers.Count != 0)
+            {
+                <table>
+                    @foreach (var usuario in Model.ProjectDetail.ProjectUsers)
+                    {
+                        if (usuario.IdUserFxNavigation != null)
+                        {
+                            <tr>
+                                <td><li>@(usuario.IdUserFxNavigation.NameU)</li></td>
+                                <td style="padding-left: 20px;">
+                                    <a onclick="return confirm('¿Deseas quitar al usuario del proyecto? Las tareas asignadas al usuario serán eliminadas también')" href="/detail/ProjectDetail?idProject=@(Model.ProjectDetail.IdProject)&handler=QuitarParticipante&idProjectUser=@(usuario.IdProjectUser)&idUser=@(usuario.IdUserFx)">
+                                    Eliminar
+                                    </a>
+                                </td>
+                            </tr>
+                            
+                        }
+
+                    }
+                </table>
+            }
+            else
+            {
+                <p>El proyecto no tiene ningún participante.</p>
+            }
+
+        </ul>
+    </div>
+    <div style="margin-left: 60px;">
+        <table class="tabla" style="width: 500px;">
+            <thead class="proyectos-head">
+                <tr>
+                    <th>Tarea</th>
+                    <th>Usuario Responsable</th>
+                </tr>
+            </thead>
+            <tbody class="proyectos-body">
+                @if (Model.Tasks.Count != 0)
+                {
+                    @foreach (var tarea in Model.Tasks)
+                    {
+                        <tr>
+                            <td>@(tarea.NameT)</td>
+                            @if (tarea.IdUserFxNavigation != null)
+                            {
+                                <td>@(tarea.IdUserFxNavigation.NameU)</td>
+                            }
+
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="2" style="text-align: center;">No hay tareas disponibles</td>
+                    </tr>
+                }
+
+
+            </tbody>
+        </table>
+    </div>
+</div>
+<div>
+    <h4>Crear Tareas:</h4>
+    <table>
+        <form method="post" asp-page-handler="CrearTarea">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <tr style="display: none;">
+                <td><input asp-for="IdProject" type="number"></td>
+            </tr>
+            <tr>
+                <td><label>Nombre:</label></td>
+                <td>
+                    <input required asp-for="Task.NameT" type="text">
+                    <span asp-validation-for="Task.NameT"></span>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Descripción:</label></td>
+                <td>
+                    <input asp-for="Task.DescriptionT" type="text">
+                    <span asp-validation-for="Task.DescriptionT"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Usuario Responsable:</label>
+                </td>
+                <td>
+                    <select asp-for="Task.IdUserFx" class="lista-desplegable">
+                        <option value="0">Seleccione un usuario</option>
+                        @foreach(Models.ProjectUser usuario in Model.ObtenerUsuarios(Model.ProjectDetail.IdProject))
+                        {   
+                            @if(usuario.IdUserFxNavigation != null){
+                                <option value="@(usuario.IdUserFx)">@(usuario.IdUserFxNavigation.NameU)</option>
+                            }
+                            
+                        }
+                    </select>
+                    <span asp-validation-for="Task.IdUserFx"></span>
+                </td>
+            </tr>
+            <tr>
+                <td><input class="boton" type="submit" value="Crear Tarea"></td>
+            </tr>
+        </form>
+    </table>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

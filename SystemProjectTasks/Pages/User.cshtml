@@ -1,0 +1,29 @@
+﻿@page
+@model SystemProjectTasks.Pages.UserModel
+@{
+}
+
+<div id="tabla-usuarios">
+    <table class="tabla">
+        <thead class="proyectos-head">
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody class="proyectos-body centrar">
+            @if (Model.Users.LongCount() != 0)
+            {
+                @foreach (var usuario in Model.Users)
+                {
+                    <tr>
+                        <td>@usuario.NameU</td>
+                        <td>@usuario.LastName</td>
+                        <td></td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</div>

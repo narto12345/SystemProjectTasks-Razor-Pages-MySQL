@@ -1,0 +1,66 @@
+﻿@page
+@model SystemProjectTasks.Pages.ProjectUpdateModel
+@{
+}
+
+<div id="formulario-creacion">
+    <table>
+        <form method="post" asp-page-handler="EditarProyecto" id="crear-proyecto">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <tr style="display: none;">
+                <td><label>Id:</label></td>
+                <td>
+                    <input asp-for="ProjectAfter.IdProject" value="@Model.ProjectBefore.IdProject" type="text">
+                    <span asp-validation-for="ProjectAfter.IdProject"></span>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Nombre:</label></td>
+                <td>
+                    <input asp-for="ProjectAfter.NameP" value="@Model.ProjectBefore.NameP" type="text">
+                    <span asp-validation-for="ProjectAfter.NameP"></span>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Descripción:</label></td>
+                <td>
+                    <input asp-for="ProjectAfter.DescriptionP" value="@Model.ProjectBefore.DescriptionP" type="text">
+                </td>
+            </tr>
+            <tr>
+            </tr>
+            <tr>
+                <td>
+                    <label>Estado:</label>
+                </td>
+                <td>
+                    <select asp-for="ProjectAfter.StatusP" class="lista-desplegable">
+                        @if (Model.ProjectBefore.StatusP)
+                        {
+                            <option value="true">En Curso</option>
+                            <option value="false">Completado</option>
+                        }
+                        else
+                        {
+                            <option value="false">Completado</option>
+                            <option value="true">En Curso</option>
+                        }
+
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><input class="boton" type="submit" value="Confirmar"></td>
+                <td>
+                    <a asp-area="" asp-page="/ProjectPage">
+                        <input class="boton" type="button" value="Cancelar">
+                    </a>
+                </td>
+            </tr>
+        </form>
+    </table>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

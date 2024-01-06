@@ -1,0 +1,107 @@
+﻿@page
+@model SystemProjectTasks.Pages.ProjectPageModel
+
+<button id="boton" class="boton">Crear Proyecto</button>
+
+<div id="tabla-proyectos" @(Model.mostrarFormulario ? "class=oculto" : "")>
+    <table class="tabla">
+        <thead class="proyectos-head">
+            <tr>
+                <th>
+                    Nombre
+                </th>
+                <th>
+                    Descripción
+                </th>
+                <th>
+                    Estado
+                </th>
+                <th>
+                    Acciones
+                </th>
+            </tr>
+        </thead>
+        <tbody class="proyectos-body">
+            @if (Model.Projects.LongCount() != 0)
+            {
+                @foreach (var proyecto in Model.Projects)
+                {
+                    <tr>
+                        <td>
+                            @proyecto.NameP
+                        </td>
+                        <td class="description">
+                            @proyecto.DescriptionP
+                        </td>
+                        <td class="estados">
+                            @(Model.TransformarEstado(proyecto.StatusP))
+                        </td>
+                        <td class="acciones">
+                            <a class="enlaces-action" asp-area="" asp-page="/detail/ProjectDetail" asp-route-id="@proyecto.IdProject">
+                                <button class="boton-action">Detalle</button>
+                            </a>
+                            <a class="enlaces-action" asp-area="" asp-page="/ProjectUpdate" asp-route-id="@proyecto.IdProject">
+                                <button class="boton-action">Editar</button>
+                            </a>
+                            <form style="display: inline;" method="post" asp-page-handler="Delete"
+                                asp-route-id="@proyecto.IdProject">
+                                <button class="boton-action"
+                                    onclick="return confirm('¿Deseas borrar el proyecto?')">Eliminar</button>
+                            </form>
+                        </td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr>
+                    <td colspan="4">
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<div id="formulario-creacion" @(Model.mostrarFormulario ? "" : "class=oculto")>
+    <table>
+        <form method="post" asp-page-handler="CrearProyecto" id="crear-proyecto">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <tr>
+                <td><label>Nombre:</label></td>
+                <td>
+                    <input asp-for="Project.NameP" type="text">
+                    <span asp-validation-for="Project.NameP"></span>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Descripción:</label></td>
+                <td>
+                    <input asp-for="Project.DescriptionP" type="text">
+                    <span asp-validation-for="Project.DescriptionP"></span>
+                </td>
+            </tr>
+            <tr>
+            </tr>
+            <tr>
+                <td>
+                    <label>Estado:</label>
+                </td>
+                <td>
+                    <select asp-for="Project.StatusP" class="lista-desplegable">
+                        <option value="true">En Curso</option>
+                        <option value="false">Completado</option>
+                    </select>
+                    <span asp-validation-for="Project.StatusP"></span>
+                </td>
+            </tr>
+            <tr>
+                <td><input class="boton" type="submit" value="Crear"></td>
+            </tr>
+        </form>
+    </table>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
