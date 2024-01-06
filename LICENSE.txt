@@ -1,0 +1,26 @@
+NonCommercial Open Source Software License (NC-OSSL)
+
+Version 1.0, [2023-09-17]
+
+TERMS AND CONDITIONS FOR NON-COMMERCIAL COPYING, DISTRIBUTION, AND MODIFICATION
+
+1. Definitions.
+   "Licensee" means any individual or entity exercising rights under this License.
+   "Commercial Use" means any use, exploitation, or distribution for commercial purposes, including but not limited to sale, sublicensing, for-profit distribution, or incorporation into commercial products or services.
+
+2. License Grant.
+   Subject to the terms and conditions of this License, Licensor grants Licensee a non-exclusive, worldwide, royalty-free, and non-sublicensable license to copy, modify, and distribute the Software solely for non-commercial purposes.
+
+3. Limitations.
+   Licensee may not use the Software for Commercial Use without the express written permission of the Licensor.
+
+4. Conditions of Use.
+   Licensee agrees to comply with all applicable laws and regulations in connection with the use of the Software.
+
+5. Disclaimer of Warranty.
+   The Software is provided "as is," without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, and non-infringement. Licensee assumes all risk associated with the use of the Software.
+
+6. Limitation of Liability.
+   In no event shall the Licensor be liable for any direct, indirect, incidental, special, exemplary, or consequential damages (including, but not limited to, procurement of substitute goods or services; loss of use, data, or profits; or business interruption) however caused and on any theory of liability, whether in contract, strict liability, or tort (including negligence or otherwise) arising in any way out of the use of the Software, even if advised of the possibility of such damage.
+
+THIS LICENSE DOES NOT PERMIT COMMERCIAL USE OF THE SOFTWARE. ANY COMMERCIAL USE REQUIRES THE EXPRESS WRITTEN PERMISSION OF THE LICENSOR.
