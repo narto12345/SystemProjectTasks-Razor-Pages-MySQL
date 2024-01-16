@@ -2573,11 +2573,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projects\\SystemProjectTasks\\SystemProjectTasks.csproj",
+      "projectUniqueName": "C:\\Users\\nicos\\Desktop\\Varios\\System Project Tasks\\SourceCode-GitHub\\SystemProjectTasks-Razor-Pages-MySQL\\SystemProjectTasks\\SystemProjectTasks.csproj",
       "projectName": "SystemProjectTasks",
-      "projectPath": "C:\\Projects\\SystemProjectTasks\\SystemProjectTasks.csproj",
+      "projectPath": "C:\\Users\\nicos\\Desktop\\Varios\\System Project Tasks\\SourceCode-GitHub\\SystemProjectTasks-Razor-Pages-MySQL\\SystemProjectTasks\\SystemProjectTasks.csproj",
       "packagesPath": "C:\\Users\\nicos\\.nuget\\packages\\",
-      "outputPath": "C:\\Projects\\SystemProjectTasks\\obj\\",
+      "outputPath": "C:\\Users\\nicos\\Desktop\\Varios\\System Project Tasks\\SourceCode-GitHub\\SystemProjectTasks-Razor-Pages-MySQL\\SystemProjectTasks\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\nicos\\AppData\\Roaming\\NuGet\\NuGet.Config",

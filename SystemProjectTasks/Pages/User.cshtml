@@ -3,6 +3,10 @@
 @{
 }
 
+<a class="enlaces-action" asp-page="/formUser/FormUser">
+    <button id="botonCrearUsuario" class="boton">Crear Usuario</button>
+</a>
+
 <div id="tabla-usuarios">
     <table class="tabla">
         <thead class="proyectos-head">
@@ -20,9 +24,23 @@
                     <tr>
                         <td>@usuario.NameU</td>
                         <td>@usuario.LastName</td>
-                        <td></td>
+                        <td class="acciones">
+                            <a asp-route-id="@(usuario.IdUser)" asp-route-handler="EliminarUsuario">
+                                <button class="boton-action" onclick="return confirm('¿Deseas borrar el proyecto?')">
+                                    Eliminar
+                                </button>
+                            </a>
+                        </td>
                     </tr>
                 }
+            }
+            else
+            {
+                <tr>
+                    <td colspan="3" style="text-align: center;">
+                        No existen usuarios
+                    </td>
+                </tr>
             }
         </tbody>
     </table>

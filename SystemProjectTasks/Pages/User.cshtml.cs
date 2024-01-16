@@ -21,5 +21,11 @@ namespace SystemProjectTasks.Pages
         {
             this.Users = this._userDAO.ObtenerUsuarios();
         }
+
+        public IActionResult OnGetEliminarUsuario(int id)
+        {
+            this._userDAO.EliminarUsuario(this._userDAO.ObtenerUsuario(id));
+            return RedirectToAction("Get");
+        }
     }
 }

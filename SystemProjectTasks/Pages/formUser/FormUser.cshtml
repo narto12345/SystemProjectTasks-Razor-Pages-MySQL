@@ -1,0 +1,42 @@
+﻿@page
+@model SystemProjectTasks.Pages.FormUserModel
+@{
+}
+<h1>Creación de Usuario</h1>
+
+<div id="formulario-creacion">
+    <table>
+        <form method="post" asp-page-handler="CrearUsuario" id="crear-proyecto">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <tr style="display: none;">
+                <td><label>Id:</label></td>
+                <td>
+                    <input asp-for="UserBind.IdUser" value="@Model.UserBind.IdUser" type="text">
+                    <span asp-validation-for="UserBind.IdUser"></span>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Nombre:</label></td>
+                <td>
+                    <input asp-for="UserBind.NameU" value="@Model.UserBind.NameU" type="text">
+                    <span asp-validation-for="UserBind.NameU"></span>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Apellido:</label></td>
+                <td>
+                    <input asp-for="UserBind.LastName" value="@Model.UserBind.LastName" type="text">
+                    <span asp-validation-for="UserBind.LastName"></span>
+                </td>
+            </tr>
+            <tr>
+                <td><input class="boton" type="submit" value="Guardar"></td>
+                <td>
+                    <a asp-area="" asp-page="/User">
+                        <input class="boton" type="button" value="Cancelar">
+                    </a>
+                </td>
+            </tr>
+        </form>
+    </table>
+</div>

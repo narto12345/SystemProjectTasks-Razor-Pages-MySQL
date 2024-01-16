@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "O3KPwI8DDmdnfWU5g42O/7fPhQcwGhS5SKolcfb9fq8vPX0jTksAVYc+Wo5pVwXWYT9i85oFmSykleZxYyLq3A==",
+  "dgSpecHash": "PpOlO2I0v8y6aeNGRP/DkGBkMHsrUXkrG1OiRtQXw51GsTAcPbw5Qv9cr7B7pfSFqtbhKI8Hm6qJIJB1YbgsEA==",
   "success": true,
-  "projectFilePath": "C:\\Projects\\SystemProjectTasks\\SystemProjectTasks.csproj",
+  "projectFilePath": "C:\\Users\\nicos\\Desktop\\Varios\\System Project Tasks\\SourceCode-GitHub\\SystemProjectTasks-Razor-Pages-MySQL\\SystemProjectTasks\\SystemProjectTasks.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nicos\\.nuget\\packages\\google.protobuf\\3.21.9\\google.protobuf.3.21.9.nupkg.sha512",
     "C:\\Users\\nicos\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
