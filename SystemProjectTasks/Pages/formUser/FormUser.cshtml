@@ -1,12 +1,26 @@
 ﻿@page
 @model SystemProjectTasks.Pages.FormUserModel
 @{
+    string action = "CrearUsuario";
+    string? idUser = default!;
+    string? errorEditar = Request.Query["handler"];
+    if ((Model.IdUser == null) && (errorEditar != "EditarUsuario"))
+    {
+        idUser = "Es nulo";
+    }
+    else
+    {
+        idUser = Model.IdUser;
+        action = "EditarUsuario";
+    }
 }
 <h1>Creación de Usuario</h1>
 
+<p>Valor del parámetro "id": @idUser</p>
+
 <div id="formulario-creacion">
     <table>
-        <form method="post" asp-page-handler="CrearUsuario" id="crear-proyecto">
+        <form method="post" asp-page-handler="@action" id="crear-proyecto">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <tr style="display: none;">
                 <td><label>Id:</label></td>

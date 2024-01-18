@@ -1,6 +1,7 @@
 ﻿@page
 @model SystemProjectTasks.Pages.UserModel
 @{
+
 }
 
 <a class="enlaces-action" asp-page="/formUser/FormUser">
@@ -25,7 +26,10 @@
                         <td>@usuario.NameU</td>
                         <td>@usuario.LastName</td>
                         <td class="acciones">
-                            <a asp-route-id="@(usuario.IdUser)" asp-route-handler="EliminarUsuario">
+                            <a class="enlaces-action" asp-route-id="@(usuario.IdUser)" asp-page="/formUser/FormUser">
+                                <button class="boton-action">Editar</button>
+                            </a>
+                            <a class="enlaces-action" asp-route-id="@(usuario.IdUser)" asp-route-handler="EliminarUsuario">
                                 <button class="boton-action" onclick="return confirm('¿Deseas borrar el proyecto?')">
                                     Eliminar
                                 </button>

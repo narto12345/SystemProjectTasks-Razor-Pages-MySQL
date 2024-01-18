@@ -9,61 +9,61 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = SystemProjectTasks
 build_property.RootNamespace = SystemProjectTasks
-build_property.ProjectDir = C:\Users\nicos\Desktop\Varios\System Project Tasks\SourceCode-GitHub\SystemProjectTasks-Razor-Pages-MySQL\SystemProjectTasks\
+build_property.ProjectDir = c:\Users\nicos\Desktop\Varios\System Project Tasks\SourceCode-GitHub\SystemProjectTasks-Razor-Pages-MySQL\SystemProjectTasks\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\nicos\Desktop\Varios\System Project Tasks\SourceCode-GitHub\SystemProjectTasks-Razor-Pages-MySQL\SystemProjectTasks
+build_property.MSBuildProjectDirectory = c:\Users\nicos\Desktop\Varios\System Project Tasks\SourceCode-GitHub\SystemProjectTasks-Razor-Pages-MySQL\SystemProjectTasks
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/nicos/Desktop/Varios/System Project Tasks/SourceCode-GitHub/SystemProjectTasks-Razor-Pages-MySQL/SystemProjectTasks/Pages/addUserProject/AddUserProject.cshtml]
+[c:/Users/nicos/Desktop/Varios/System Project Tasks/SourceCode-GitHub/SystemProjectTasks-Razor-Pages-MySQL/SystemProjectTasks/Pages/addUserProject/AddUserProject.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcYWRkVXNlclByb2plY3RcQWRkVXNlclByb2plY3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nicos/Desktop/Varios/System Project Tasks/SourceCode-GitHub/SystemProjectTasks-Razor-Pages-MySQL/SystemProjectTasks/Pages/detail/ProjectDetail.cshtml]
+[c:/Users/nicos/Desktop/Varios/System Project Tasks/SourceCode-GitHub/SystemProjectTasks-Razor-Pages-MySQL/SystemProjectTasks/Pages/detail/ProjectDetail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcZGV0YWlsXFByb2plY3REZXRhaWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nicos/Desktop/Varios/System Project Tasks/SourceCode-GitHub/SystemProjectTasks-Razor-Pages-MySQL/SystemProjectTasks/Pages/Error.cshtml]
+[c:/Users/nicos/Desktop/Varios/System Project Tasks/SourceCode-GitHub/SystemProjectTasks-Razor-Pages-MySQL/SystemProjectTasks/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nicos/Desktop/Varios/System Project Tasks/SourceCode-GitHub/SystemProjectTasks-Razor-Pages-MySQL/SystemProjectTasks/Pages/formUser/FormUser.cshtml]
+[c:/Users/nicos/Desktop/Varios/System Project Tasks/SourceCode-GitHub/SystemProjectTasks-Razor-Pages-MySQL/SystemProjectTasks/Pages/formUser/FormUser.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcZm9ybVVzZXJcRm9ybVVzZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nicos/Desktop/Varios/System Project Tasks/SourceCode-GitHub/SystemProjectTasks-Razor-Pages-MySQL/SystemProjectTasks/Pages/Index.cshtml]
+[c:/Users/nicos/Desktop/Varios/System Project Tasks/SourceCode-GitHub/SystemProjectTasks-Razor-Pages-MySQL/SystemProjectTasks/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nicos/Desktop/Varios/System Project Tasks/SourceCode-GitHub/SystemProjectTasks-Razor-Pages-MySQL/SystemProjectTasks/Pages/Privacy.cshtml]
+[c:/Users/nicos/Desktop/Varios/System Project Tasks/SourceCode-GitHub/SystemProjectTasks-Razor-Pages-MySQL/SystemProjectTasks/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nicos/Desktop/Varios/System Project Tasks/SourceCode-GitHub/SystemProjectTasks-Razor-Pages-MySQL/SystemProjectTasks/Pages/ProjectPage.cshtml]
+[c:/Users/nicos/Desktop/Varios/System Project Tasks/SourceCode-GitHub/SystemProjectTasks-Razor-Pages-MySQL/SystemProjectTasks/Pages/ProjectPage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvamVjdFBhZ2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nicos/Desktop/Varios/System Project Tasks/SourceCode-GitHub/SystemProjectTasks-Razor-Pages-MySQL/SystemProjectTasks/Pages/ProjectUpdate.cshtml]
+[c:/Users/nicos/Desktop/Varios/System Project Tasks/SourceCode-GitHub/SystemProjectTasks-Razor-Pages-MySQL/SystemProjectTasks/Pages/ProjectUpdate.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvamVjdFVwZGF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nicos/Desktop/Varios/System Project Tasks/SourceCode-GitHub/SystemProjectTasks-Razor-Pages-MySQL/SystemProjectTasks/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[c:/Users/nicos/Desktop/Varios/System Project Tasks/SourceCode-GitHub/SystemProjectTasks-Razor-Pages-MySQL/SystemProjectTasks/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nicos/Desktop/Varios/System Project Tasks/SourceCode-GitHub/SystemProjectTasks-Razor-Pages-MySQL/SystemProjectTasks/Pages/User.cshtml]
+[c:/Users/nicos/Desktop/Varios/System Project Tasks/SourceCode-GitHub/SystemProjectTasks-Razor-Pages-MySQL/SystemProjectTasks/Pages/User.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nicos/Desktop/Varios/System Project Tasks/SourceCode-GitHub/SystemProjectTasks-Razor-Pages-MySQL/SystemProjectTasks/Pages/_ViewImports.cshtml]
+[c:/Users/nicos/Desktop/Varios/System Project Tasks/SourceCode-GitHub/SystemProjectTasks-Razor-Pages-MySQL/SystemProjectTasks/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nicos/Desktop/Varios/System Project Tasks/SourceCode-GitHub/SystemProjectTasks-Razor-Pages-MySQL/SystemProjectTasks/Pages/_ViewStart.cshtml]
+[c:/Users/nicos/Desktop/Varios/System Project Tasks/SourceCode-GitHub/SystemProjectTasks-Razor-Pages-MySQL/SystemProjectTasks/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/nicos/Desktop/Varios/System Project Tasks/SourceCode-GitHub/SystemProjectTasks-Razor-Pages-MySQL/SystemProjectTasks/Pages/Shared/_Layout.cshtml]
+[c:/Users/nicos/Desktop/Varios/System Project Tasks/SourceCode-GitHub/SystemProjectTasks-Razor-Pages-MySQL/SystemProjectTasks/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-366m14d68u
