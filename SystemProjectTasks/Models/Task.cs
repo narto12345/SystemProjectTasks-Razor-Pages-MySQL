@@ -13,11 +13,11 @@ public partial class Task
 
     public string? DescriptionT { get; set; }
 
-    public int? Priority { get; set; }
+    public Priority Priority { get; set; }
 
-    public int? StatusP { get; set; }
+    public StatusP StatusP { get; set; }
 
-    public DateTime? DueDate { get; set; }
+    public DateTime DueDate { get; set; }
 
     public int? IdProjectFk { get; set; }
 
@@ -26,4 +26,21 @@ public partial class Task
     public virtual Project? IdProjectFkNavigation { get; set; }
 
     public virtual User? IdUserFxNavigation { get; set; } = default!;
+}
+
+public enum StatusP
+{
+    [Display(Name = "Pendiente")]
+    Pendiente,
+    [Display(Name = "En Progreso")]
+    EnProgreso,
+    [Display(Name = "Completada")]
+    Completada
+}
+
+public enum Priority
+{
+    Baja,
+    Media,
+    Alta
 }

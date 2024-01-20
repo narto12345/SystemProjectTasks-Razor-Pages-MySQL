@@ -4,10 +4,21 @@
 }
 <h1>Id de proyecto: @(Model.IdProject)</h1>
 
-<ul>
-    @foreach (var user in Model.Users)
-    {
-        <li>@(user.NameU) - <a asp-page="/addUserProject/AddUserProject" asp-route-idProject="@(Model.IdProject)"
-                asp-route-idUser="@(user.IdUser)" asp-page-handler="Agregar"><button>Agregar</button></a></li>
-    }
-</ul>
+<table>
+    <ul>
+        @foreach (var user in Model.Users)
+        {
+            <tr>
+                <td>
+                    <li>
+                        @(user.NameU)
+                    </li>
+                </td>
+                <td>
+                    <a asp-page="/addUserProject/AddUserProject" asp-route-idProject="@(Model.IdProject)"
+                        asp-route-idUser="@(user.IdUser)" asp-page-handler="Agregar"><button>Agregar</button></a>
+                </td>
+            </tr>
+        }
+    </ul>
+</table>

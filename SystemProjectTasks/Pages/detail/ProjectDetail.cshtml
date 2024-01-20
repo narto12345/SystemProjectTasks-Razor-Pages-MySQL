@@ -39,11 +39,15 @@
         </ul>
     </div>
     <div style="margin-left: 60px;">
-        <table class="tabla" style="width: 500px;">
+        <table class="tabla" style="width: 1000px;">
             <thead class="proyectos-head">
                 <tr>
                     <th>Tarea</th>
-                    <th>Usuario Responsable</th>
+                    <th>Descripción</th>
+                    <th>Responsable</th>
+                    <th>Estado</th>
+                    <th>Prioridad</th>
+                    <th>Vencimiento</th>
                 </tr>
             </thead>
             <tbody class="proyectos-body">
@@ -52,19 +56,22 @@
                     @foreach (var tarea in Model.Tasks)
                     {
                         <tr>
-                            <td>@(tarea.NameT)</td>
+                            <td class="description">@(tarea.NameT)</td>
+                            <td class="description">@(tarea.DescriptionT)</td>
                             @if (tarea.IdUserFxNavigation != null)
                             {
-                                <td>@(tarea.IdUserFxNavigation.NameU)</td>
+                                <td class="description">@(tarea.IdUserFxNavigation.NameU)</td>
                             }
-
+                            <td>@(Model.GetDisplayValue(tarea.StatusP))</td>
+                            <td>@tarea.Priority</td>
+                            <td>@(Model.FormatearFecha(tarea.DueDate))</td>
                         </tr>
                     }
                 }
                 else
                 {
                     <tr>
-                        <td colspan="2" style="text-align: center;">No hay tareas disponibles</td>
+                        <td colspan="6" style="text-align: center;">No hay tareas disponibles</td>
                     </tr>
                 }
 
@@ -111,6 +118,26 @@
                         }
                     </select>
                     <span asp-validation-for="Task.IdUserFx"></span>
+                </td>
+                <td>
+                    <select asp-for="Task.Priority" class="lista-desplegable">
+                        <option value="Baja">Baja</option>
+                        <option value="Media">Media</option>
+                        <option value="Alta">Alta</option>
+                    </select>
+                    <span asp-validation-for="Task.Priority"></span>
+                </td>
+                <td>
+                    <select asp-for="Task.StatusP" class="lista-desplegable">
+                        <option value="Pendiente">Pendiente</option>
+                        <option value="EnProgreso">En Progreso</option>
+                        <option value="Completada">Completada</option>
+                    </select>
+                    <span asp-validation-for="Task.StatusP"></span>
+                </td>
+                <td>
+                    <input required asp-for="Task.DueDate" type="date">
+                    <span asp-validation-for="Task.DueDate"></span>
                 </td>
             </tr>
             <tr>

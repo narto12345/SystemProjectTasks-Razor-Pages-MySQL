@@ -1,3 +1,5 @@
+using System.ComponentModel.DataAnnotations;
+using System.Reflection;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
@@ -62,5 +64,20 @@ namespace SystemProjectTasks.Pages
             List<ProjectUser> usuarios = this._projectDAO.ObtenerUsuariosProyecto(idProyecto);
             return usuarios;
         }
+
+        public string GetDisplayValue(Enum value)
+        {
+            // Obtener el campo para el valor de la enumeración
+            FieldInfo field = value.GetType().GetField(value.ToString());
+
+            // Obtener el atributo Display si está presente
+            DisplayAttribute attribute = field.GetCustomAttribute<DisplayAttribute>();
+
+            // Devolver el valor de display si el atributo está presente, de lo contrario, devolver el nombre de la enumeración
+            return attribute != null ? attribute.Name : value.ToString();
+        }
+
+        public string FormatearFecha(DateTime fecha) => fecha.ToString("yyyy/MM/dd");
+
     }
 }
